@@ -1,0 +1,270 @@
+* {
+    --bg-dark: #121212;
+    --bg-card: rgba(255, 255, 255, 0.1);
+    --text-light: #fff;
+    --accent: #00ffcc;
+    --accent-hover: #00cca3;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: var(--text-light);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    width: 80%;
+    margin: 30px auto;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 20px rgba(0, 255, 204, 0.2);
+}
+
+/* Header */
+#header img {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#header img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigasi */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: var(--bg-card);
+    border-radius: 10px;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+ul li a:hover,
+.current a {
+    background: var(--accent);
+    color: #000;
+    box-shadow: 0px 0px 10px var(--accent);
+    transform: scale(1.1);
+}
+
+/* Konten */
+#content {
+    padding: 10px;
+}
+
+h2 {
+    font-weight: 600;
+    text-shadow: 2px 2px 10px rgba(0, 255, 204, 0.3);
+}
+
+
+.struktur-kelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+.level {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level1 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level2 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level3 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level4 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level5 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level6 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level7 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level8 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level9 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+.level10 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+ 
+}
+
+.card {
+    margin: -50px;
+    margin-top: 20px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    width: 280px;
+    text-align: center;
+    box-shadow: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 120px;
+    height: 160px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.level1 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level2 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level3 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level4 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level5 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level6 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level7 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level8 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level9 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+.level10 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}   
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0,5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+.icon {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon a:hover {
+    transform: scale(1.2);
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 255, 204, 0.5));
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--bg-card);
+    border-radius: 10px;
+}
