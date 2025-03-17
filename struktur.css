@@ -87,71 +87,20 @@ h2 {
 }
 
 
-.level {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level1 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level2 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level3 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level4 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level5 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level6 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level7 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level8 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
-.level9 {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
- 
-}
+.level,
+.level1,
+.level2,
+.level3,
+.level4,
+.level5,
+.level6,
+.level7,
+.level8,
+.level9,
 .level10 {
     display: flex;
     justify-content: center;
-    gap: 0px;
- 
+    gap: 0px;  
 }
 
 .card {
@@ -179,67 +128,31 @@ h2 {
     object-fit: cover;
 }
 
-.level1 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level2 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level3 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level4 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level5 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level6 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level7 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level8 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level9 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-.level10 {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}   
-
 @keyframes appear {
     from {
         opacity: 0;
-        scale: 0,5;
+        scale: 0.5;
     }
     to {
         opacity: 1;
         scale: 1;
     }
 }
+
+.level1, 
+.level2, 
+.level3, 
+.level4, 
+.level5, 
+.level6, 
+.level7, 
+.level8, 
+.level9 {
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 .icon {
     margin-top: 12px;
     display: flex;
