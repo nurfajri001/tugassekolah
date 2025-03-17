@@ -143,25 +143,26 @@ footer {
 
 /* transisi */
 
-.slebew {
-    opacity: 0;
-    transform: translateY(10px);
-    animation: fadeIn 1s forwards;
+.level1, 
+.level2, 
+.level3, 
+.level4, 
+.level5, 
+.level6,
+.level7,
+.level8,
+.level9,
+.level10 {
+    animation: fadeIn;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
-.slebew:nth-child(1) { animation-delay: 0,3s; }
-.slebew:nth-child(2) { animation-delay: 0.6s; }
-.slebew:nth-child(3) { animation-delay: 0.9s; }
-.slebew:nth-child(4) { animation-delay: 1.2s; }
-.slebew:nth-child(5) { animation-delay: 1.5s; }
-.slebew:nth-child(6) { animation-delay: 1.8s; }
-.slebew:nth-child(7) { animation-delay: 2.1s; }
-.slebew:nth-child(8) { animation-delay: 2.4s; }
-.slebew:nth-child(9) { animation-delay: 2.6s; }
-.slebew:nth-child(10) { animation-delay: 2.9s; }
-.slebew:nth-child(11) { animation-delay: 3.1s; }
-
-.icon:nth-child(1) { animation-delay: 3.4s; }
+.level {
+    display: flex;
+    justify-content: center;
+    gap: 0px;  
+}
 
 @keyframes fadeIn {
     from {
